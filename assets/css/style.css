@@ -1,0 +1,51 @@
+body {
+    background-image: url(../images/58901937-pink-subtle-background-with-soft-vintage-pastel-texture.jpg);
+}
+.jumbotron-fluid {
+    opacity: 0.8;
+    margin-left: 80px;
+    margin-top: -50px;
+    border: 4px dotted salmon;
+
+
+}
+
+h1 {
+    border-bottom: 2px solid gray;
+}
+
+.card {
+    float: right;
+    margin-top: -460px;
+    text-align: center;
+    margin-right: 200px;
+}
+
+
+
+.card-header {
+    font-weight: bold;
+    color: teal;
+    font-size: 20px;
+}
+
+#score {
+    border: 1px solid salmon;
+}
+
+
+
+.RandomNumber {
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.Crystals {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#crystal1, #crystal2, #crystal3, #crystal4 {
+    border: 2px dotted salmon;
+}

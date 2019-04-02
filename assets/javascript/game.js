@@ -17,14 +17,14 @@ $(document).ready(function () {
     function newRound() {
         score = 0;
         $("#score").html(score);
-        computerPick = parseInt(Math.Floor(Math.random() * 100) + 17);
-        $(".RandomNumber").html(computerPick);
+        computerPick = parseInt(Math.floor(Math.random() * 100) + 17);
+        $(".RandomNumber").html("Match:" +computerPick);
 
     }
 
     $("#crystal1").on("click", function () {
         score = score + crystal1;
-        $("#score").html(score);
+        $("#score").html("Your Total Score:" +score);
         if (score == computerPick) {
             checkWin();
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     $("#crystal2").on("click", function () {
         score = score + crystal2;
-        $("#score").html(score);
+        $("#score").html("Your Total Score:" +score);
         if (score == computerPick) {
             checkWin();
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     $("#crystal3").on("click", function () {
         score = score + crystal3;
-        $("#score").html(score);
+        $("#score").html("Your Total Score:" +score);
         if (score == computerPick) {
             checkWin();
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     $("#crystal4").on("click", function () {
         score = score + crystal4;
-        $("#score").html(score);
+        $("#score").html("Your Total Score:" +score);
         if (score == computerPick) {
             checkWin();
 
@@ -70,12 +70,12 @@ $(document).ready(function () {
 
         if (score === computerPick) {
             wins++;
-            $("#text").html("You win!");
             $("#wins").html("Wins:" + wins);
+            alert("You won! Play again?");
             newRound();
         } else if (score > computerPick) {
             losses++;
-            $("#text").html("You lost!");
+            $("#text").html("You Lost Try Again!");
             $("#losses").html("Losses:" + losses);
             newRound();
         }

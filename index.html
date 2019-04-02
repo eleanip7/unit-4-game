@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/reset.css">
+    <link rel="stylesheet" href="../unit-4-game/assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cystals Collector</title>
 </head>
+
 <body>
+
+    <header>Crystals Collector!</header>
+
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+        score.</p>
+    <p>You win the game by matching the total score to random number, you lose the game if your total score goes above
+        the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+    <p>Each time when the game starts, the game will change the value of each crystal.</p>
+
+    <div class="RandomNumber">
+        <p>Match:</p>
+
+    </div>
+
+
+
+    <div class="scoreboard">
+        <p id="wins">Wins:</p>
+        <p id="losses">Losess:</p>
+
+    </div>
+
+
+
+
+    <div class="Crystals">
+        <img id="crystal1" src="../unit-4-game/assets/images/Crystal1.jpg" width="180" height="150">
+        <img id="crystal2" src="../unit-4-game/assets/images/Crystal2.jpg" width="180" height="150">
+        <img id="crystal3" src="../unit-4-game/assets/images/crystal3.png" width="180" height="150">
+        <img id="crystal4" src="../unit-4-game/assets/images/Crystal4.jpg" width="180" height="150">
+
+    </div>
+
+    <div class="totalscore">
+            <p id="text"></p>
+            <p id="score">Your total score:</p>
     
+        </div>
+
+        <script type="text/javascript" src="../unit-4-game/assets/javascript/game.js"></script>
+
 </body>
+
 </html>

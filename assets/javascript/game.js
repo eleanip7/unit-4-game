@@ -9,10 +9,10 @@ $(document).ready(function () {
     var computerPick = parseInt(Math.floor(Math.random() * 100) + 17);
     $(".RandomNumber").html("Match this score: " +computerPick);
 
-    var crystal1 = parseInt(Math.floor(Math.random() * 10) + 7);
-    var crystal2 = parseInt(Math.floor(Math.random() * 10) + 7);
-    var crystal3 = parseInt(Math.floor(Math.random() * 10) + 7);
-    var crystal4 = parseInt(Math.floor(Math.random() * 10) + 7);
+    var crystal1 = parseInt(Math.floor(Math.random() * 12) + 1);
+    var crystal2 = parseInt(Math.floor(Math.random() * 12) + 1);
+    var crystal3 = parseInt(Math.floor(Math.random() * 12) + 1);
+    var crystal4 = parseInt(Math.floor(Math.random() * 12) + 1);
 
     function newRound() {
         score = 0;

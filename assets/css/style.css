@@ -26,7 +26,7 @@ h1 {
 .card-header {
     font-weight: bold;
     color: teal;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #score {
@@ -37,7 +37,7 @@ h1 {
 
 .RandomNumber {
     padding: 30px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -46,6 +46,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-#crystal1, #crystal2, #crystal3, #crystal4 {
-    border: 2px dotted salmon;
+#crystal1:hover, #crystal2:hover, #crystal3:hover, #crystal4:hover {
+    border: 3px dotted salmon;
+    transform: scale(1.1);
 }

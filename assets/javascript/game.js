@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
     var computerPick = parseInt(Math.floor(Math.random() * 100) + 17);
-    $(".RandomNumber").html("Match:" +computerPick);
+    $(".RandomNumber").html("Match: " +computerPick);
 
     var crystal1 = parseInt(Math.floor(Math.random() * 10) + 7);
     var crystal2 = parseInt(Math.floor(Math.random() * 10) + 7);
@@ -18,13 +18,13 @@ $(document).ready(function () {
         score = 0;
         $("#score").html(score);
         computerPick = parseInt(Math.floor(Math.random() * 100) + 17);
-        $(".RandomNumber").html("Match:" +computerPick);
+        $(".RandomNumber").html("Match: " +computerPick);
 
     }
 
     $("#crystal1").on("click", function () {
         score = score + crystal1;
-        $("#score").html("Your Total Score:" +score);
+        $("#score").html("Your Total Score: " +score);
         if (score == computerPick) {
             checkWin();
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     $("#crystal2").on("click", function () {
         score = score + crystal2;
-        $("#score").html("Your Total Score:" +score);
+        $("#score").html("Your Total Score: " +score);
         if (score == computerPick) {
             checkWin();
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     $("#crystal3").on("click", function () {
         score = score + crystal3;
-        $("#score").html("Your Total Score:" +score);
+        $("#score").html("Your Total Score: " +score);
         if (score == computerPick) {
             checkWin();
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     $("#crystal4").on("click", function () {
         score = score + crystal4;
-        $("#score").html("Your Total Score:" +score);
+        $("#score").html("Your Total Score: " +score);
         if (score == computerPick) {
             checkWin();
 
@@ -70,13 +70,13 @@ $(document).ready(function () {
 
         if (score === computerPick) {
             wins++;
-            $("#wins").html("Wins:" + wins);
+            $("#wins").html("Wins: " + wins);
             alert("You won! Play again?");
             newRound();
         } else if (score > computerPick) {
             losses++;
             $("#text").html("You Lost Try Again!");
-            $("#losses").html("Losses:" + losses);
+            $("#losses").html("Losses: " + losses);
             newRound();
         }
     }

@@ -6,7 +6,7 @@ $(document).ready(function () {
     var score = 0;
 
 
-    var computerPick = parseInt(Math.floor(Math.random() * 100) + 17);
+    var computerPick = parseInt(Math.floor(Math.random() * 100) + 19);
     $(".RandomNumber").html("Match this score: " +computerPick);
 
     var crystal1 = parseInt(Math.floor(Math.random() * 12) + 1);
@@ -17,7 +17,7 @@ $(document).ready(function () {
     function newRound() {
         score = 0;
         $("#score").html(score);
-        computerPick = parseInt(Math.floor(Math.random() * 100) + 17);
+        computerPick = parseInt(Math.floor(Math.random() * 100) + 19);
         $(".RandomNumber").html("Match this score: " +computerPick);
 
     }
